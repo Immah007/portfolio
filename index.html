@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Baraka Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; margin: 0; font-family: "Montserrat", sans-serif;
+        }
+        #head{
+            width: 100%;
+            height: 3.5rem;
+            color: white;
+            background: #114;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #pdf-container {
+            text-align: center;
+            width: 100%;
+        }
+        canvas {
+            border: 1px solid #ddd;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            
+            width: 6rem;
+            height: 2.7rem;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 1.5rem;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="head"> <h3 >Emmanuel Baraka - Portfolio </h3></div>
+    <h1 style="font-weight:700;">Hello, Welcome</h1>
+    <p style="width:80%; font-weight: 300; margin:0 auto;">Due to challenges with my Gmail, I am not able to attach any documents on email, and so I am not able to attach my portfolio of email. I have contacted Google and they are yet to solve the issue. So I created this temporary webpage where the PDF of my Portfolio is accessible. Once this page loads, the pdf will show on the screen, but it may delay for upto 2 minues to fully load. If it loads quick, please use the "previous" and "next" buttons to show through the different pages. To keep the pdf size light, with less pages and easier to load, I put many images together in the pages. If the pdf takes too long to show on the screen, Kindly click the "Download PDF" button to download it and view it. Sorry for any inconvenience and thanks for your understanding.</p>
+
+    <!-- PDF viewer container -->
+    <div id="pdf-container"></div>
+
+    <!-- Controls for navigation and download -->
+    <div class="controls">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button> <br>
+        <button id="downloadPdf" style="background: #114; color: white; width: 80%;">Download PDF</button>
+    </div>
+
+    <!-- Include PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+    <script>
+        const pdfUrl = 'emmanuel_baraka_portfolio.pdf'; // The PDF file is in the same directory as your HTML file
+        let pdfDoc = null;
+        let currentPage = 1;
+        let totalPages = 0;
+
+        // Set up PDF.js
+        pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+            pdfDoc = pdf;
+            totalPages = pdf.numPages;
+            renderPage(currentPage); // Render the first page
+        }).catch(function(error) {
+            console.error('Error loading PDF: ', error);
+        });
+
+        // Render a specific page
+        function renderPage(pageNum) {
+            pdfDoc.getPage(pageNum).then(function(page) {
+                const scale = 1.5; // Set zoom level
+                const viewport = page.getViewport({ scale: scale });
+
+                // Create a canvas to render the page
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                // Clear previous canvas content
+                document.getElementById('pdf-container').innerHTML = '';
+                document.getElementById('pdf-container').appendChild(canvas);
+
+                // Render the page into the canvas
+                page.render({
+                    canvasContext: context,
+                    viewport: viewport
+                });
+            });
+        }
+
+        // Navigation buttons
+        document.getElementById('prevPage').addEventListener('click', function() {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+            }
+        });
+
+        document.getElementById('nextPage').addEventListener('click', function() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage(currentPage);
+            }
+        });
+
+        // Download button
+        document.getElementById('downloadPdf').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = 'mydocs.pdf'; // This is the name of the downloaded file
+            link.click();
+        });
+    </script>
+</body>
+</html>
