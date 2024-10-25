@@ -67,6 +67,7 @@ html,body,#main{
 .nav-btn{
     height: 100%;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 .navlinks{
     display: flex;
@@ -149,6 +150,7 @@ html,body,#main{
     }
     .content{
         top: 5%;
+        gap: 2rem;
     }
     .button-grandpa{
         justify-content: flex-start;
