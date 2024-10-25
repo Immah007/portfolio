@@ -150,7 +150,7 @@ html,body,#main{
     }
     .content{
         top: 5%;
-        gap: 2rem;
+        gap: 1.4rem;
     }
     .button-grandpa{
         justify-content: flex-start;
