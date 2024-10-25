@@ -49,6 +49,8 @@ html,body,#main{
 .logo{
     width: 5rem;
     height: 80%;
+    display: flex;
+    align-items: center;
     
 }
 .logo>img{
@@ -72,6 +74,8 @@ html,body,#main{
     width: 100%;
     font-family: 'Poppins', sans-serif;
     background: transparent;
+    color: white;
+    border: none;
 }
 .navlinks{
     display: flex;
