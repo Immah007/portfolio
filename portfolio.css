@@ -152,10 +152,10 @@ html,body,#main{
     }
     .button-grandpa{
         justify-content: flex-start;
-        height: 2rem
+        height: 2.4rem
     }
     .button-grandpa .text{
-        top: 2.1rem;
+        top: 6rem;
     }
 
 }
