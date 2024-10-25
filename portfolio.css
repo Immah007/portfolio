@@ -92,7 +92,7 @@ html,body,#main{
     min-height: 20%;
     position: relative;
     top: 25%;
-    left: 1.2rem;
+    left: .2rem;
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
@@ -139,10 +139,10 @@ html,body,#main{
         display: flex;
     }
     .heading{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     #main{
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .content{
         top: 10%;
