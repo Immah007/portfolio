@@ -51,6 +51,9 @@ html,body,#main{
     height: 80%;
     
 }
+.logo>img{
+    height: 95%;
+}
 .nav-grandpa{
     min-width: 1rem;
     height: 80%;
@@ -159,6 +162,9 @@ html,body,#main{
     }
     .button-grandpa .text{
         top: 6rem;
+    }
+    .logo>img{
+    height: 75%;
     }
 
 }
