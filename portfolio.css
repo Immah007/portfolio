@@ -90,6 +90,7 @@ html,body,#main{
 .navlinks>li>a{
     text-decoration: none;
     color: grey;
+    font-weight: 200;
 }
 .button-dad{
     width: 15rem;
