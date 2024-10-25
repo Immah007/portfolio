@@ -51,7 +51,7 @@ html,body,#main{
     background: rebeccapurple;
 }
 .nav-grandpa{
-    min-width: 5rem;
+    min-width: 1rem;
     height: 80%;
     backgroundd: rebeccapurple;
     display: flex;
@@ -139,7 +139,17 @@ html,body,#main{
         display: flex;
     }
     .heading{
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
+    #main{
+        font-size: 1rem;
+    }
+    .content{
+        top: 10%;
+    }
+    .button-grandpa{
+        justify-content: flex-start;
+    }
+    
 
 }
