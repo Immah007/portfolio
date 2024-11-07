@@ -155,6 +155,9 @@ html,body,#main{
     font-weight: 700;
     transition: .5s;
 }
+.snowflake{
+    z-index: 7;
+}
 .home-btn:hover{
     transform: translate(-4px, 4px);
     box-shadow: 2px 2px 7px black;
