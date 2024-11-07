@@ -157,7 +157,7 @@ html,body,#main{
 }
 .snowflake{
     
-            pointer-events: none; /* Prevent the snowflakes from interfering with user interaction */
+            position: relative;
             z-index: 9999;
 }
 .home-btn:hover{
