@@ -6,7 +6,7 @@
             const moveY = Math.random() * 300 - 100; // Random vertical movement
             
             // Randomly choose an image for the snowflake
-            const images = ['bethlehemstar.png', 'snowflake2.png', 'snowflake3.png'];
+            const images = ['normstar.png', 'snowflake2.png', 'snowflake3.png'];
             const randomImage = images[Math.floor(Math.random() * images.length)];
 
             // Random rotation speed and direction
