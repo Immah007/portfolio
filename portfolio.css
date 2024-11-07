@@ -93,9 +93,9 @@ html,body,#main{
     font-weight: 200;
 }
 .nav-links>li>a:hover{
-    text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.7),   /* Red shadow */
-                -3px -3px 5px rgba(0, 255, 0, 0.7),  /* Green shadow */
-                3px -3px 5px rgba(0, 0, 255, 0.7),   /* Blue shadow */
+    text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.7),
+                -3px -3px 5px rgba(0, 255, 0, 0.7),
+                3px -3px 5px rgba(0, 0, 255, 0.7),
                 -3px 3px 5px rgba(255, 255, 0, 0.7);
 }
 .button-dad{
