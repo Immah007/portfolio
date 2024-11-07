@@ -91,12 +91,14 @@ html,body,#main{
     text-decoration: none;
     color: grey;
     font-weight: 200;
+    transition: .5s;
 }
 .navlinks>li>a:hover{
     text-shadow: 3px 3px 5px #00bfff,
                 -3px -3px 5px #00bfff,
                 3px -3px 5px #00bfff,
                 -3px 3px 5px #00bfff;
+    font-weight: 300;
 }
 .button-dad{
     width: 15rem;
