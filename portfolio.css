@@ -149,6 +149,7 @@ html,body,#main{
 }
 .home-btn:hover{
     transform: translateX(4px);
+    box-shadow: 2px 2px 7px black:
 }
 @media (max-width:768px) {
     .nav-links-dad{
