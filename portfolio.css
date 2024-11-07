@@ -145,10 +145,10 @@ html,body,#main{
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    transition: .6s;
+    transition: .5s;
 }
 .home-btn:hover{
-    transform: translate(4px, -4px);
+    transform: translate(-4px, 4px);
     box-shadow: 2px 2px 7px black;
 }
 @media (max-width:768px) {
