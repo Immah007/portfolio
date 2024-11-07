@@ -145,6 +145,10 @@ html,body,#main{
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    transition: 1s:
+}
+.home-btn:hover{
+    transform: translateX(4px);
 }
 @media (max-width:768px) {
     .nav-links-dad{
