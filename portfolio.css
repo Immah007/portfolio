@@ -99,6 +99,7 @@ body{
     text-decoration: none;
     color: grey;
     font-weight: 200;
+    display: inline-block;
     transition: text-shadow .4s;
 }
 .navlinks>li>a:hover{
