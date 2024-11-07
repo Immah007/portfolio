@@ -93,10 +93,10 @@ html,body,#main{
     font-weight: 200;
 }
 .navlinks>li>a:hover{
-    text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.7),
-                -3px -3px 5px rgba(0, 255, 0, 0.7),
-                3px -3px 5px rgba(0, 0, 255, 0.7),
-                -3px 3px 5px rgba(255, 255, 0, 0.7);
+    text-shadow: 3px 3px 5px #00bfff,
+                -3px -3px 5px #00bfff,
+                3px -3px 5px #00bfff,
+                -3px 3px 5px #00bfff;
 }
 .button-dad{
     width: 15rem;
