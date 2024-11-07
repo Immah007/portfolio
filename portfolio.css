@@ -94,6 +94,8 @@ body{
 }
 .navlinks>li{
     list-style-type: none;
+     display: inline-block;
+    
 }
 .navlinks>li>a{
     text-decoration: none;
