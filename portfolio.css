@@ -156,7 +156,9 @@ html,body,#main{
     transition: .5s;
 }
 .snowflake{
-    z-index: 7;
+     position: absolute;
+            pointer-events: none; /* Prevent the snowflakes from interfering with user interaction */
+            z-index: 9999;
 }
 .home-btn:hover{
     transform: translate(-4px, 4px);
