@@ -165,9 +165,22 @@ body{
 }
 .snowflake{
     
-            position: absolute;
-            z-index: 9999;
+          position: absolute;
+            pointer-events: none;
+            background-color: transparent; /* No background color */
+            animation: moveAndRotate 2s forwards;
 }
+/* Animation for the snowflake movement and rotation */
+        @keyframes moveAndRotate {
+            0% {
+                transform: translate(0, 0) rotate(0deg); /* Start at initial position, no rotation */
+                opacity: 1;
+            }
+            100% {
+                transform: translate(var(--move-x), var(--move-y)) rotate(var(--rotate)); /* Random movement + rotation */
+                opacity: 0;
+            }
+        }
 .home-btn:hover{
     transform: translate(-4px, 4px);
     box-shadow: 2px 2px 7px black;
