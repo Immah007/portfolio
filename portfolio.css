@@ -145,11 +145,11 @@ html,body,#main{
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    transition: 1s:
+    transition: 1s;
 }
 .home-btn:hover{
-    transform: translateX(4px);
-    box-shadow: 2px 2px 7px black:
+    transform: translateX(-4px), translateY(4px);
+    box-shadow: 2px 2px 7px black;
 }
 @media (max-width:768px) {
     .nav-links-dad{
