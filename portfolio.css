@@ -55,10 +55,11 @@ body{
     font-size: 1.6rem;
 }
 .logo{
-    width: 5rem;
+    min-width: 5rem;
     height: 80%;
     display: flex;
     align-items: center;
+    padding-right: 1rem;
     
 }
 .logo>img{
